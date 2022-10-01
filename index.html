@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="header">Know Your Age</div>
+    <div class="inputSection">
+      <input type="date" name="dob-name" id="dob" />
+      <button class="btn" onclick="convert()">Convert</button>
+    </div>
+
+    <div class="resultSetion" id="result"></div>
+
+    <div id="errorSection" class="error">
+      <!-- Modal content -->
+      <div class="errorContent">
+        <h2 id="errorMessage"></h2>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+  </body>
+</html>
