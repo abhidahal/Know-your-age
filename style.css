@@ -31,34 +31,27 @@ body {
   font-size: 2rem;
   position: absolute;
   top: 40px;
-  color: #000;
+  color: var(--white);
   font-weight: 600;
 }
-
-input {
-  font-family: "Anek Latin", sans-serif !important;
+.selectInput {
+  display: flex;
 }
-input[type="date"] {
+select {
   background-color: var(--lightblue);
-  padding: 15px 35px;
   color: #000;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  margin-bottom: 20px;
+  padding: 5px 0 5px 5px;
+  margin: 0 5px 20px 0;
 }
-::webkit-clendar-picker-indicator {
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 3px;
-}
+
 button {
   font-family: "Anek Latin", sans-serif !important;
   cursor: pointer;
 }
 .inputSection {
-  width: 160px;
-  margin-right: 40px;
   margin-top: -80px;
 }
 .btn {
@@ -72,6 +65,7 @@ button {
   border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
+  margin-left: 12px;
 }
 
 .btn:hover {
@@ -145,7 +139,10 @@ button {
     width: 65%;
     margin: 210px auto;
   }
-  input[type="date"] {
-    padding: 15px 20px;
+  .inputSection {
+    margin-top: 0px;
+  }
+  .btn {
+    margin-left: 10px;
   }
 }

@@ -13,8 +13,9 @@ function convert() {
 }
 
 function getDobDate() {
-  const dobDate = document.getElementById("dob").value;
-  var [y, m, d] = dobDate.split("-");
+  const y = document.getElementById("birthyear").value;
+  const m = document.getElementById("birthmonth").value;
+  const d = document.getElementById("birthdate").value;
   if (!m && !d) {
     setErrorMessage("Enter Valid Date");
     return;
